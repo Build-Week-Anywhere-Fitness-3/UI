@@ -1,14 +1,50 @@
-.hero-container {
-    .hero-image {
-        img {
-            max-width: 50%;
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 98%;
+    margin: auto;
+    .hero-container {
+        display: flex;
+        padding: 1%;
+        border: solid dodgerblue 2px;
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            border: solid yellow 2px;
+            img {
+                max-width: 60%;
+            }
+        }    
+    }
+    .middle-container {
+        display: flex;
+        border: solid dodgerblue 2px;
+        padding: 1%;
+        .middle-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+            border: solid yellow 2px;
+            img {
+                max-width: 50%;
+            }
         }
-    }    
-}
-.middle-container {
-    .middle-image {
-        img {
-            max-width: 30%;
+    }
+    .bottom-container {
+        display: flex;
+        border: solid dodgerblue 2px;
+        padding: 1%;
+        .bottom-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;  
+            border: solid yellow 2px;
+            img {
+                max-width: 60%;
+            }
         }
     }
 }
