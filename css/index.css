@@ -126,16 +126,47 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 75%;
+}
+body {
+  background-color: darkgrey;
+  font-family: spartan;
+}
+body p {
+  color: rgba(11, 15, 42, 0.827);
+  font-size: 1.2rem;
+}
 .navigation {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: solid pink 2px;
+  padding: 1%;
+}
+.navigation .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 0.703);
 }
 .navigation .nav-bar {
   display: flex;
   justify-content: space-evenly;
   padding: 0px 30%;
+}
+@media (max-width: 500px) {
+  .navigation .nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 20px;
+  }
+}
+.navigation .nav-bar a {
+  text-decoration: none;
+  color: rgba(28, 27, 27, 0.649);
 }
 footer {
   display: flex;
@@ -151,34 +182,52 @@ body {
 body .hero-container {
   display: flex;
   padding: 1%;
-  border: solid dodgerblue 2px;
 }
 body .hero-container .hero-image {
   display: flex;
   justify-content: center;
-  border: solid yellow 2px;
+}
+@media (max-width: 500px) {
+  body .hero-container .hero-image {
+    width: 100%;
+  }
 }
 body .hero-container .hero-image img {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  width: 100%;
   max-width: 60%;
 }
 body .middle-container {
   display: flex;
-  border: solid dodgerblue 2px;
   padding: 1%;
+}
+@media (max-width: 500px) {
+  body .middle-container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 body .middle-container .middle-image {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: solid yellow 2px;
 }
 body .middle-container .middle-image img {
-  max-width: 50%;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 70%;
+  padding: 2%;
 }
 body .bottom-container {
   display: flex;
-  border: solid dodgerblue 2px;
   padding: 1%;
 }
 body .bottom-container .bottom-image {
@@ -186,8 +235,17 @@ body .bottom-container .bottom-image {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: solid yellow 2px;
 }
 body .bottom-container .bottom-image img {
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  width: 100%;
   max-width: 60%;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  body .bottom-container .bottom-image img {
+    display: none;
+  }
 }
