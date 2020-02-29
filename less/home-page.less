@@ -23,12 +23,11 @@ body {
     .middle-container {
         display: flex;
         padding: 1%;
+        background-color: yellowgreen;
+        // transform: skewX(4deg);
         @media @phone {
-            width: 70%;
-            display: flex; 
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+            display: flex;
+            flex-wrap: wrap;
         }
         
         .middle-image {
@@ -40,6 +39,7 @@ body {
             
             img {
                 .rounded-image(20px, 100%);
+                // transform: skewX(-4deg);
                 max-width: 70%;
                 padding: 2%;
             }
@@ -48,21 +48,57 @@ body {
     .bottom-container {
         display: flex;
         padding: 1%;
-        
+        // background-color: yellowgreen;
+        // transform: skewX(4deg);
         .bottom-image {
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;  
+            flex-direction: column; 
+            p {
+                @media @phone {
+                    display: none;
+                } 
+            }
            
             img {     
                .rounded-image(40px, 100%);
                 max-width: 60%;
                 padding: 2%;    
+                // transform: skewX(-4deg);
                 @media @phone {
                     display: none;
                 }
             }
         }
+    }
+    .enter {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1%;
+        background-color: yellowgreen;
+        @media @phone {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .client-trainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+            
+            img {
+                max-width: 60%;
+                max-height: 80%;
+                border-radius: 6px;
+                
+            }
+            button {
+                .rounded-button(6px, 25%);
+            }
+        }
+        
     }
 }
