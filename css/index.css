@@ -133,8 +133,12 @@ html {
   font-size: 75%;
 }
 body {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
   background-color: whitesmoke;
   font-family: spartan;
+  max-width: 98%;
 }
 body p {
   color: rgba(11, 15, 42, 0.827);
@@ -144,19 +148,22 @@ body p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1%;
+  padding: 3%;
   max-width: 80%;
   margin-left: 10%;
   background-color: yellowgreen;
 }
 .navigation .logo {
+  display: flex;
+  justify-content: center;
   font-size: 2.5rem;
   font-weight: bolder;
   color: rgba(0, 0, 0, 0.703);
+  padding: 3%;
 }
 .navigation .nav-bar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 0px 30%;
 }
 @media (max-width: 500px) {
@@ -187,13 +194,21 @@ body .hero-container {
   padding: 1%;
 }
 body .hero-container .hero-image {
-  display: flex;
-  justify-content: center;
+  position: relative;
+  text-align: center;
+  color: yellowgreen;
+  font-size: 1.8rem;
 }
 @media (max-width: 500px) {
   body .hero-container .hero-image {
     width: 100%;
   }
+}
+body .hero-container .hero-image .image-text {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 body .hero-container .hero-image img {
   -webkit-border-radius: 10px;
@@ -201,6 +216,11 @@ body .hero-container .hero-image img {
   border-radius: 10px;
   width: 100%;
   max-width: 60%;
+}
+@media (max-width: 500px) {
+  body .hero-container .hero-image img {
+    width: 500px;
+  }
 }
 body .middle-container {
   display: flex;
@@ -265,6 +285,7 @@ body .enter {
   body .enter {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 body .enter .client-trainer {
@@ -274,16 +295,27 @@ body .enter .client-trainer {
   flex-direction: column;
 }
 body .enter .client-trainer img {
-  max-width: 60%;
-  max-height: 80%;
+  max-width: 300px;
+  max-height: 300px;
   border-radius: 6px;
 }
 body .enter .client-trainer button {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
-  width: 25%;
+  width: 35%;
   background-color: white;
   height: 40px;
   color: black;
+}
+@media (max-width: 500px) {
+  body .enter .client-trainer button {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    width: 15%;
+    background-color: white;
+    height: 40px;
+    color: black;
+  }
 }

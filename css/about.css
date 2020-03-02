@@ -5,17 +5,36 @@ html {
   font-size: 75%;
 }
 body {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
   background-color: whitesmoke;
   font-family: spartan;
   max-width: 98%;
+}
+body *p {
+  font-size: 1.2rem;
 }
 body .navigation {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 1%;
+  max-width: 80%;
+  margin-left: 10%;
+  background-color: yellowgreen;
+}
+@media (max-width: 500px) {
+  body .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 body .navigation .logo {
+  display: flex;
+  justify-content: center;
   font-size: 2.5rem;
   font-weight: bolder;
   color: rgba(0, 0, 0, 0.703);
@@ -45,14 +64,23 @@ body .middle-container {
   max-width: 90%;
 }
 body .team-container {
-  border: solid lime 2px;
+  display: flex;
+  max-width: 100%;
 }
 body .team-container .team-image {
-  border: solid red 4px;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 body .team-container .team-image img {
-  max-width: 20%;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  width: 100%;
+}
+body footer {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
 }

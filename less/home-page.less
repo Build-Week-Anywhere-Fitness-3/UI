@@ -8,15 +8,28 @@ body {
         padding: 1%;
         
         .hero-image {
-            display: flex;
-            justify-content: center;
+            // display: flex;
+            // justify-content: center;
+            position: relative;
+            text-align: center;
+            color: yellowgreen;
+            font-size: 1.8rem;
             @media @phone {
                 width: 100%;
             }
+                .image-text {
+                    position: absolute;
+                    top: 10%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
             
             img {
                 .rounded-image(10px, 100%);
                 max-width: 60%;
+                @media @phone {
+                    width: 500px;
+                }
             }
         }    
     }
@@ -80,6 +93,7 @@ body {
         @media @phone {
             display: flex;
             flex-wrap: wrap;
+            flex-direction: column;
         }
 
         .client-trainer {
@@ -90,13 +104,16 @@ body {
             
             
             img {
-                max-width: 60%;
-                max-height: 80%;
+                max-width: 300px;
+                max-height: 300px;
                 border-radius: 6px;
                 
             }
             button {
-                .rounded-button(6px, 25%);
+                .rounded-button(6px, 35%);
+                @media @phone {
+                    .rounded-button(6px; 15%);
+                }
             }
         }
         
