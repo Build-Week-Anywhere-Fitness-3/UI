@@ -215,11 +215,11 @@ body .hero-container .hero-image img {
   -moz-border-radius: 10px;
   border-radius: 10px;
   width: 100%;
-  max-width: 60%;
+  max-width: 100%;
 }
 @media (max-width: 500px) {
   body .hero-container .hero-image img {
-    width: 500px;
+    width: 100%;
   }
 }
 body .middle-container {
@@ -303,7 +303,7 @@ body .enter .client-trainer button {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
-  width: 35%;
+  width: 40%;
   background-color: white;
   height: 40px;
   color: black;
@@ -313,9 +313,17 @@ body .enter .client-trainer button {
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
-    width: 15%;
+    width: 20%;
     background-color: white;
     height: 40px;
     color: black;
   }
+  body .enter .client-trainer button:hover {
+    background-color: black;
+    color: yellowgreen;
+  }
+}
+body .enter .client-trainer button:hover {
+  background-color: black;
+  color: yellowgreen;
 }

@@ -26,9 +26,9 @@ body {
             
             img {
                 .rounded-image(10px, 100%);
-                max-width: 60%;
+                max-width: 100%;
                 @media @phone {
-                    width: 500px;
+                    width: 100%;
                 }
             }
         }    
@@ -110,10 +110,18 @@ body {
                 
             }
             button {
-                .rounded-button(6px, 35%);
+                .rounded-button(6px, 40%);
                 @media @phone {
-                    .rounded-button(6px; 15%);
+                    .rounded-button(6px; 20%);
+                    &:hover {
+                        background-color:black;
+                        color: yellowgreen;
+                      }
                 }
+                &:hover {
+                    background-color:black;
+                    color: yellowgreen;
+                  }
             }
         }
         
