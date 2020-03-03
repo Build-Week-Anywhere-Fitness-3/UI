@@ -17,6 +17,9 @@ body {
             @media @phone {
                 width: 100%;
             }
+            @media @tablet {
+                width: 100%;
+            }
                 .image-text {
                     position: absolute;
                     top: 10%;
@@ -30,6 +33,9 @@ body {
                 @media @phone {
                     width: 100%;
                 }
+                @media @tablet {
+                    width: 100%;
+                }
             }
         }    
     }
@@ -39,6 +45,10 @@ body {
         background-color: yellowgreen;
         // transform: skewX(4deg);
         @media @phone {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        @media @tablet {
             display: flex;
             flex-wrap: wrap;
         }
@@ -91,6 +101,11 @@ body {
         padding: 1%;
         background-color: yellowgreen;
         @media @phone {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        @media @tablet {
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;

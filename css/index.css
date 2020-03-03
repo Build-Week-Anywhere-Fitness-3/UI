@@ -210,6 +210,11 @@ body .hero-container .hero-image {
     width: 100%;
   }
 }
+@media (max-width: 800px) {
+  body .hero-container .hero-image {
+    width: 100%;
+  }
+}
 body .hero-container .hero-image .image-text {
   position: absolute;
   top: 10%;
@@ -228,12 +233,23 @@ body .hero-container .hero-image img {
     width: 100%;
   }
 }
+@media (max-width: 800px) {
+  body .hero-container .hero-image img {
+    width: 100%;
+  }
+}
 body .middle-container {
   display: flex;
   padding: 1%;
   background-color: yellowgreen;
 }
 @media (max-width: 500px) {
+  body .middle-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 800px) {
   body .middle-container {
     display: flex;
     flex-wrap: wrap;
@@ -288,6 +304,13 @@ body .enter {
   background-color: yellowgreen;
 }
 @media (max-width: 500px) {
+  body .enter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
   body .enter {
     display: flex;
     flex-wrap: wrap;
