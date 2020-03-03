@@ -12,9 +12,6 @@ body {
   font-family: spartan;
   max-width: 98%;
 }
-body *p {
-  font-size: 1.2rem;
-}
 body .navigation {
   display: flex;
   flex-direction: column;
@@ -55,29 +52,67 @@ body .navigation .nav-bar {
 body .navigation .nav-bar a {
   text-decoration: none;
   color: rgba(28, 27, 27, 0.649);
+  font-size: 1.6rem;
 }
-body .middle-container {
+@media (max-width: 500px) {
+  body .navigation .nav-bar a {
+    font-size: 1.2rem;
+  }
+}
+body .about-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 90%;
+}
+body .about-container .about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 100%;
+}
+body .about-container .about-image img {
+  max-width: 100%;
+}
+body .about-banner {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  background-color: yellowgreen;
+  font-size: 1.6rem;
 }
 body .team-container {
   display: flex;
   max-width: 100%;
+}
+@media (max-width: 500px) {
+  body .team-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 body .team-container .team-image {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  background-color: yellowgreen;
+}
+@media (max-width: 500px) {
+  body .team-container .team-image {
+    display: flex;
+    flex-direction: column;
+  }
 }
 body .team-container .team-image img {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
   width: 100%;
+}
+body .team-container .team-image p {
+  font-size: 1.2rem;
 }
 body footer {
   display: flex;

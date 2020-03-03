@@ -28,9 +28,7 @@ html {
     font-size: 75%;
   }
 body {
-    *p {
-        font-size: 1.2rem;
-    }
+   
     display: flex;
     flex-direction: column;
     
@@ -80,37 +78,63 @@ body {
             a {
                 text-decoration: none;
                 color: @bar-items;
+                font-size: 1.6rem;
+                @media @phone {
+                    font-size: 1.2rem;
+                }
             }
         }      
     }
-    .middle-container {
+    .about-container {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        max-width: 90%;
+        
+
+        .about-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            max-width: 100%;
+            img {
+                max-width: 100%;
+            }
+        }
     }
-    .team-container {
-        
+    .about-banner {
         display: flex;
-        
+        justify-content: center;
+        padding: 1%;
+        background-color: yellowgreen;
+        font-size: 1.6rem;
+    }
+    .team-container {  
+        display: flex;      
         max-width: 100%;
+        @media @phone {
+            display: flex;
+            flex-direction: column;
+        }
         
         .team-image {
-
-
             display: flex;
-
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-            
+            background-color: yellowgreen;
+            @media @phone {
+                display: flex;
+                flex-direction: column;
+            }
 
-            
-            
             img {
                 // max-width: 100%;
                 .rounded-image(8px, 100%);     
+            }
+            p {
+                font-size: 1.2rem;
             }
         }
         
