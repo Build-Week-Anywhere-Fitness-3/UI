@@ -71,6 +71,18 @@ body {
     .bottom-container {
         display: flex;
         padding: 1%;
+        @media @tablet {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            padding: 2%;
+        }
+        @media @phone {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+        }
+
         // background-color: yellowgreen;
         // transform: skewX(4deg);
         .bottom-image {
@@ -82,6 +94,9 @@ body {
                 @media @phone {
                     display: none;
                 } 
+                @media @tablet {
+                    display: none;
+                }
             }
            
             img {     
@@ -92,7 +107,25 @@ body {
                 @media @phone {
                     display: none;
                 }
+                @media @tablet {
+                    display: none;
+                }
             }
+        }
+        .motivate {
+            @media screen and (min-width: 801px) {
+                display: none;
+            }
+            p {
+                @media @tablet {
+                    color:yellowgreen;
+                    font-size: 1.4rem;
+                }
+                @media @phone {
+                    color: yellowgreen;
+                    font-size: 1.4rem;
+                }
+             }
         }
     }
     .enter {
@@ -133,12 +166,18 @@ body {
                         color: yellowgreen;
                       }
                 }
+                @media @tablet {
+                    .rounded-button(6px; 20%);
+                    &:hover {
+                        background-color:black;
+                        color: yellowgreen;
+                      }
                 &:hover {
                     background-color:black;
                     color: yellowgreen;
                   }
+                }
             }
-        }
-        
+        }      
     }
 }

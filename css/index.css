@@ -146,8 +146,8 @@ body p {
 }
 .navigation {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
   padding: 3%;
   max-width: 80%;
   margin-left: 10%;
@@ -155,7 +155,6 @@ body p {
 }
 .navigation .logo {
   display: flex;
-  justify-content: center;
   font-size: 2.5rem;
   font-weight: bolder;
   color: rgba(0, 0, 0, 0.703);
@@ -178,6 +177,10 @@ body p {
   text-decoration: none;
   color: rgba(28, 27, 27, 0.649);
   font-size: 1.5rem;
+}
+.navigation .nav-bar a:hover {
+  font-size: 1.6rem;
+  font-weight: bolder;
 }
 @media (max-width: 500px) {
   .navigation .nav-bar a {
@@ -273,6 +276,21 @@ body .bottom-container {
   display: flex;
   padding: 1%;
 }
+@media (max-width: 800px) {
+  body .bottom-container {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 2%;
+  }
+}
+@media (max-width: 500px) {
+  body .bottom-container {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+  }
+}
 body .bottom-container .bottom-image {
   display: flex;
   justify-content: center;
@@ -280,6 +298,11 @@ body .bottom-container .bottom-image {
   flex-direction: column;
 }
 @media (max-width: 500px) {
+  body .bottom-container .bottom-image p {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
   body .bottom-container .bottom-image p {
     display: none;
   }
@@ -295,6 +318,28 @@ body .bottom-container .bottom-image img {
 @media (max-width: 500px) {
   body .bottom-container .bottom-image img {
     display: none;
+  }
+}
+@media (max-width: 800px) {
+  body .bottom-container .bottom-image img {
+    display: none;
+  }
+}
+@media screen and (min-width: 801px) {
+  body .bottom-container .motivate {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  body .bottom-container .motivate p {
+    color: yellowgreen;
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 500px) {
+  body .bottom-container .motivate p {
+    color: yellowgreen;
+    font-size: 1.4rem;
   }
 }
 body .enter {
@@ -352,7 +397,22 @@ body .enter .client-trainer button {
     color: yellowgreen;
   }
 }
-body .enter .client-trainer button:hover {
-  background-color: black;
-  color: yellowgreen;
+@media (max-width: 800px) {
+  body .enter .client-trainer button {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    width: 20%;
+    background-color: white;
+    height: 40px;
+    color: black;
+  }
+  body .enter .client-trainer button:hover {
+    background-color: black;
+    color: yellowgreen;
+  }
+  body .enter .client-trainer button:hover {
+    background-color: black;
+    color: yellowgreen;
+  }
 }
