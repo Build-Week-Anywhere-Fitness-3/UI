@@ -1,15 +1,11 @@
 body {
-    display: flex;
-    flex-direction: column;
-    max-width: 98%;
-    margin: auto;
+
     .hero-container {
         display: flex;
         padding: 1%;
         
         .hero-image {
-            // display: flex;
-            // justify-content: center;
+            
             position: relative;
             text-align: center;
             color: yellowgreen;
@@ -43,7 +39,7 @@ body {
         display: flex;
         padding: 1%;
         background-color: yellowgreen;
-        // transform: skewX(4deg);
+        
         @media @phone {
             display: flex;
             flex-wrap: wrap;
@@ -62,7 +58,7 @@ body {
             
             img {
                 .rounded-image(20px, 100%);
-                // transform: skewX(-4deg);
+                
                 max-width: 70%;
                 padding: 2%;
             }
@@ -83,8 +79,7 @@ body {
             background-color: black;
         }
 
-        // background-color: yellowgreen;
-        // transform: skewX(4deg);
+        
         .bottom-image {
             display: flex;
             justify-content: center;
@@ -161,21 +156,11 @@ body {
                 .rounded-button(6px, 40%);
                 @media @phone {
                     .rounded-button(6px; 20%);
-                    &:hover {
-                        background-color:black;
-                        color: yellowgreen;
-                      }
+                    
                 }
                 @media @tablet {
                     .rounded-button(6px; 20%);
-                    &:hover {
-                        background-color:black;
-                        color: yellowgreen;
-                      }
-                &:hover {
-                    background-color:black;
-                    color: yellowgreen;
-                  }
+                    
                 }
             }
         }      

@@ -146,19 +146,10 @@ body p {
 }
 .navigation {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   padding: 3%;
-  max-width: 80%;
-  margin-left: 10%;
   background-color: yellowgreen;
-}
-.navigation .logo {
-  display: flex;
-  font-size: 2.5rem;
-  font-weight: bolder;
-  color: rgba(0, 0, 0, 0.703);
-  padding: 3%;
 }
 .navigation .nav-bar {
   display: flex;
@@ -166,6 +157,14 @@ body p {
   padding: 0px 30%;
 }
 @media (max-width: 500px) {
+  .navigation .nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 800px) {
   .navigation .nav-bar {
     display: flex;
     justify-content: space-evenly;
@@ -184,19 +183,26 @@ body p {
 }
 @media (max-width: 500px) {
   .navigation .nav-bar a {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
+}
+@media (max-width: 800px) {
+  .navigation .nav-bar a {
+    font-size: 1.1rem;
+  }
+}
+.navigation .logo {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 0.703);
+  padding: 3%;
 }
 footer {
   display: flex;
   justify-content: center;
   padding: 1%;
-}
-body {
-  display: flex;
-  flex-direction: column;
-  max-width: 98%;
-  margin: auto;
 }
 body .hero-container {
   display: flex;
@@ -382,6 +388,10 @@ body .enter .client-trainer button {
   height: 40px;
   color: black;
 }
+body .enter .client-trainer button:hover {
+  background-color: black;
+  color: yellowgreen;
+}
 @media (max-width: 500px) {
   body .enter .client-trainer button {
     -webkit-border-radius: 6px;
@@ -406,10 +416,6 @@ body .enter .client-trainer button {
     background-color: white;
     height: 40px;
     color: black;
-  }
-  body .enter .client-trainer button:hover {
-    background-color: black;
-    color: yellowgreen;
   }
   body .enter .client-trainer button:hover {
     background-color: black;
